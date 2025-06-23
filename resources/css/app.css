@@ -1,0 +1,39 @@
+*{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar.bg-transparent {
+  background-color: transparent !important;
+  box-shadow: none; /* Optional: removes any default shadow */
+}
+
+/* Infinite Banner */
+.wrapper {
+font-size: larger;;
+font-weight: bold;
+  max-width: 100%;
+  overflow: hidden;
+  background-color: yellow;
+}
+
+.marquee {
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  animation: marquee 30s linear infinite;
+}
+
+.marquee p {
+  display: inline-block;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
