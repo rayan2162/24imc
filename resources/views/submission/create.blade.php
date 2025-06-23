@@ -1,8 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container mt-5">
-    <h2 class="mb-4">Call for Papers - Submission Form</h2>
+<div class="container my-5">
+    <h2 class="mb-4">Paper Submission Form</h2>
 
     @if(session('success'))
         <div class="alert alert-success">{{ session('success') }}</div>
@@ -17,7 +17,7 @@
         </div>
 
         <div class="col-md-6">
-            <label class="form-label">Phone Number *</label>
+            <label class="form-label">Phone Number (Whatsapp)*</label>
             <input type="text" name="phone" class="form-control" required>
         </div>
 
@@ -64,7 +64,7 @@
         </div>
 
         <div class="col-12">
-            <label class="form-label">Upload Abstract (PDF/DOC/DOCX) *</label>
+            <label class="form-label">Upload Full Length Abstract (PDF/DOC/DOCX) *</label>
             <input type="file" name="abstract" class="form-control" accept=".pdf,.doc,.docx" required>
         </div>
 
