@@ -25,9 +25,8 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 use App\Http\Controllers\SubmissionController;
 
-Route::get('/call-for-paper', [SubmissionController::class, 'create'])->name('submission.form');
-Route::post('/call-for-paper', [SubmissionController::class, 'store'])->name('submission.store');
-
+Route::get('/paper-submission', [SubmissionController::class, 'create'])->name('submission.form');
+Route::post('/paper-submission', [SubmissionController::class, 'store'])->name('submission.store');
 
 Route::get('/dashboard', [SubmissionController::class, 'dashboard'])
     ->middleware(['auth', 'approved'])
